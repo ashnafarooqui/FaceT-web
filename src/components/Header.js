@@ -4,20 +4,20 @@ import styled from 'styled-components';
 import Nav from "./Nav";
 
 const Header = () => {
-  return( 
-  <MainHeader>
-        <NavLink to="/">
-            <img src="./assets/1.png" alt="my logo img"/>
-        </NavLink>
-        <Nav />
-  </MainHeader>
-  );
+    return (
+        <MainHeader>
+            <NavLink to="/">
+                <img src="./assets/1.png" alt="my logo img" />
+            </NavLink>
+            <Nav />
+        </MainHeader>
+    );
 };
 
 const MainHeader = styled.header`
     padding: 0 4.8rem;
     height: 10rem;
-    background-color: ${({ theme }) => theme.colors.bg };
+    background-color: ${({ theme }) => theme.colors.bg};
     display: flex;
     justify-content: space-between;
     align-items: center;
